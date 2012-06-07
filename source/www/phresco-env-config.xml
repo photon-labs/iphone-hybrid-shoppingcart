@@ -1,0 +1,14 @@
+<environments>
+    <environment name="Dev" default="true">
+    <Server name="mywebservice">
+            <host>172.16.17.180</host>
+            <port>8080</port>
+            <protocol>http</protocol>
+            <context>mobilewidget</context>
+            <username>admin</username>
+            <password>admin</password>
+        </Server>
+        </environment>
+ </environments>
+
+
