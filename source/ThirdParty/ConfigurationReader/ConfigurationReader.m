@@ -20,7 +20,7 @@
 	
     // here, for some reason you have to use NSClassFromString when trying to alloc NSXMLParser, otherwise you will get an object not found error
     // this may be necessary only for the toolchain
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"xml"];
+    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"phresco-env-config" ofType:@"xml"];
     NSData *xmlData = [NSData dataWithContentsOfFile:xmlPath];
     rssParser = [[NSXMLParser alloc] initWithData:xmlData];
 	

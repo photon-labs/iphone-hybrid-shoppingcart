@@ -35,6 +35,7 @@
 @interface AppDelegate : PhoneGapDelegate {
 
 	NSString* invokeString;
+    
 }
 
 // invoke string is passed to your app on launch, this is only valid if you 
@@ -43,6 +44,6 @@
 // http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 
 @property (copy)  NSString* invokeString;
-
+NSString *urlString;
 @end
 
