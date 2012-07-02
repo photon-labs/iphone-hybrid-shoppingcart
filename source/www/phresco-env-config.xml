@@ -19,15 +19,15 @@
   -->
 <environments>
     <environment name="Dev" default="true">
-    <Server name="mywebservice">
-            <host>172.16.17.180</host>
-            <port>8080</port>
+        <Server name="mywebservice">
+            <host>ec2-50-17-157-112</host>
+            <port>compute-1.amazonaws.com</port>
             <protocol>http</protocol>
-            <context>mobilewidget</context>
+            <context>eshop</context>
             <username>admin</username>
             <password>admin</password>
         </Server>
-        </environment>
- </environments>
+    </environment>
+</environments>
 
 

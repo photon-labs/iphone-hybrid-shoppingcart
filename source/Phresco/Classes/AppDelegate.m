@@ -31,7 +31,7 @@
  */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
-    /*ConfigurationReader *configReader = [[ConfigurationReader alloc]init];
+    ConfigurationReader *configReader = [[ConfigurationReader alloc]init];
     [configReader parseXMLFileAtURL:@"Config" environment:@"myWebservice"];
     
     NSString *protocol = [[configReader.stories objectAtIndex: 0] objectForKey:@"protocol"];
@@ -50,10 +50,22 @@
     context = [context stringByTrimmingCharactersInSet:
                [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    NSString *urlString = [NSString stringWithFormat:@"%@://%@:%@/%@", protocol,host, port, context];
-    NSLog(@"Configuration urlString: %@",urlString);
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+	{
+        NSString *striPad = [[NSString alloc]initWithString:@"useragent=ipad"];
+        
+        urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPad];
+        NSLog(@"Configuration urlString: %@",urlString);
+    }
+    else {
+        
+        NSString *striPhone = [[NSString alloc]initWithString:@"useragent=iphone"];
+        
+        urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPhone];
+        NSLog(@"Configuration urlString: %@",urlString);
+    }
     
-    NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
+    /*NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
     if (url && [url isKindOfClass:[NSURL class]])
     {
         self.invokeString = [url absoluteString];
@@ -61,6 +73,14 @@
     }*/ 
 		
 	return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+
++ (NSString*) startPage
+
+{
+    
+    return urlString;  
+    
 }
 
 // this happens while we are running ( in the background, or from within our own app )

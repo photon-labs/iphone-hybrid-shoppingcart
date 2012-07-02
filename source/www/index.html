@@ -89,7 +89,7 @@
                                       var port = $(this).find('port').text(); 
                                       var context =$(this).find('context').text(); 
                                       
-                                              var url = protocol+'://'+host+':'+port+'/'+context;
+                                              var url = protocol+'://'+host+'.'+port+'/'+context;
                                               document.location.href = url;
                                               if (console && console.log){
                                               console.log( 'Sample of data:', data);
