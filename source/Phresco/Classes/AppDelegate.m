@@ -10,6 +10,7 @@
 #import "ConfigurationReader.h"
 #ifdef PHONEGAP_FRAMEWORK
 	#import <PhoneGap/PhoneGapViewController.h>
+    #import <PhoneGap/Reachability.h>
 #else
 	#import "PhoneGapViewController.h"
 #endif
@@ -31,8 +32,58 @@
  */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
+    Reachability* wifiReach = [[Reachability reachabilityWithHostName: @"www.apple.com"] retain];
+    NetworkStatus netStatus = [wifiReach currentReachabilityStatus];
+    
+    switch (netStatus)
+    {
+        case NotReachable:
+        {
+            NSLog(@"Access Not Available");
+            
+            UIAlertView *alertCheck = [[UIAlertView alloc]initWithTitle:@"" message:@"Network not available." delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+            [alertCheck show];
+            
+            break;
+        }
+            
+        case ReachableViaWWAN:
+        {
+            NSLog(@"Reachable WWAN");
+            [self urlParsing];
+            break;
+        }
+        case ReachableViaWiFi:
+        {
+            NSLog(@"Reachable WiFi");
+            [self urlParsing];
+            break;
+        }
+    }
+    
+    
+    /*NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
+    if (url && [url isKindOfClass:[NSURL class]])
+    {
+        self.invokeString = [url absoluteString];
+		NSLog(@"Phresco launchOptions = %@",url);
+    }*/ 
+		
+	return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+
++ (NSString*) startPage
+
+{
+    
+    return urlString;  
+    
+}
+
+-(void) urlParsing
+{
     ConfigurationReader *configReader = [[ConfigurationReader alloc]init];
-    [configReader parseXMLFileAtURL:@"Config" environment:@"myWebservice"];
+    [configReader parseXMLFileAtURL:@"phresco-env-config" environment:@"myWebservice"];
     
     NSString *protocol = [[configReader.stories objectAtIndex: 0] objectForKey:@"protocol"];
     protocol = [protocol stringByTrimmingCharactersInSet:
@@ -50,36 +101,29 @@
     context = [context stringByTrimmingCharactersInSet:
                [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-	{
-        NSString *striPad = [[NSString alloc]initWithString:@"useragent=ipad"];
-        
-        urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPad];
-        NSLog(@"Configuration urlString: %@",urlString);
+    NSString *strCheck = [NSString stringWithFormat:@"%@://%@.%@/%@", protocol,host, port, context];
+    if([strCheck isEqualToString:NULL])
+    {
+        UIAlertView *alertCheck = [[UIAlertView alloc]initWithTitle:@"" message:@"Server is unavailable" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [alertCheck show];
     }
     else {
         
-        NSString *striPhone = [[NSString alloc]initWithString:@"useragent=iphone"];
-        
-        urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPhone];
-        NSLog(@"Configuration urlString: %@",urlString);
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        {
+            NSString *striPad = [[NSString alloc]initWithString:@"useragent=ipad"];
+            
+            urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPad];
+            NSLog(@"Configuration urlString: %@",urlString);
+        }
+        else {
+            
+            NSString *striPhone = [[NSString alloc]initWithString:@"useragent=iphone"];
+            
+            urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPhone];
+            NSLog(@"Configuration urlString: %@",urlString);
+        }
     }
-    
-    /*NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
-    if (url && [url isKindOfClass:[NSURL class]])
-    {
-        self.invokeString = [url absoluteString];
-		NSLog(@"Phresco launchOptions = %@",url);
-    }*/ 
-		
-	return [super application:application didFinishLaunchingWithOptions:launchOptions];
-}
-
-+ (NSString*) startPage
-
-{
-    
-    return urlString;  
     
 }
 

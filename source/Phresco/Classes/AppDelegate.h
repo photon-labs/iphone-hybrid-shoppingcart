@@ -28,6 +28,7 @@
 #import <UIKit/UIKit.h>
 #ifdef PHONEGAP_FRAMEWORK
 	#import <PhoneGap/PhoneGapDelegate.h>
+    #import <PhoneGap/Reachability.h>
 #else
 	#import "PhoneGapDelegate.h"
 #endif
@@ -43,6 +44,9 @@
 // http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 
 @property (copy)  NSString* invokeString;
+
 NSString *urlString;
+
+-(void) urlParsing;
 @end
 
