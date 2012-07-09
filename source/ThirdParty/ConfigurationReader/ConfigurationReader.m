@@ -47,12 +47,12 @@
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{			
     //NSLog(@"found this element: %@", elementName);
 	currentElement = [elementName copy];
-    if(@"environment") {
+   // if(@"environment") {
 		if([elementName isEqualToString:@"environment"]) {
 			//NSString *relAtt = [attributeDict valueForKey:@"url"];
 			thisURL  = [attributeDict valueForKey:@"default"];
             NSLog(@"environment: %@", thisURL);
-        }
+        //}
     }
 	if ([elementName isEqualToString:@"Server"]) {
 		// clear out our story item caches...
