@@ -20,8 +20,8 @@
 <environments>
     <environment name="Dev" default="true">
     <Server name="mywebservice">
-            <host>ec2-50-17-157-112</host>
-            <port>compute-1.amazonaws.com</port>
+            <host>ec2-50-17-157-112.compute-1.amazonaws.com</host>
+            <port>80</port>
             <protocol>http</protocol>
             <context>eshop</context>
             <username>admin</username>

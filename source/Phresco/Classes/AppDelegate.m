@@ -120,7 +120,7 @@
             
             NSString *striPhone = [[NSString alloc]initWithString:@"useragent=iphone"];
             
-            urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPhone];
+            urlString = [NSString stringWithFormat:@"%@://%@:%@/%@?%@", protocol,host, port, context,striPhone];
             NSLog(@"Configuration urlString: %@",urlString);
         }
     }

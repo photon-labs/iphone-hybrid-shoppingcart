@@ -32,9 +32,8 @@
 		0A626B2814C6FDF100A66002 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B2714C6FDF100A66002 /* PhoneGap.plist */; };
 		0A626B2C14C6FDF100A66002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A626B2B14C6FDF100A66002 /* AppDelegate.m */; };
 		0A626B3514C6FEB700A66002 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B3414C6FEB700A66002 /* www */; };
-		C3074C1414DAD7F70075C8C7 /* jquery-1.7.1.js in Sources */ = {isa = PBXBuildFile; fileRef = C3074C1214DAD7F70075C8C7 /* jquery-1.7.1.js */; };
-		C3074C1514DAD7F70075C8C7 /* plist_parser.js in Sources */ = {isa = PBXBuildFile; fileRef = C3074C1314DAD7F70075C8C7 /* plist_parser.js */; };
 		C384E001152EE36B000EEA60 /* ConfigurationReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C384E000152EE36B000EEA60 /* ConfigurationReader.m */; };
+		C39FF30215A5D7FD00BF82A1 /* phresco-env-config.xml in Resources */ = {isa = PBXBuildFile; fileRef = C39FF30115A5D7FD00BF82A1 /* phresco-env-config.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,10 +67,9 @@
 		0A626B2B14C6FDF100A66002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		0A626B2E14C6FDF100A66002 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		0A626B3414C6FEB700A66002 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
-		C3074C1214DAD7F70075C8C7 /* jquery-1.7.1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.7.1.js"; sourceTree = "<group>"; };
-		C3074C1314DAD7F70075C8C7 /* plist_parser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plist_parser.js; sourceTree = "<group>"; };
 		C384DFFF152EE36B000EEA60 /* ConfigurationReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationReader.h; sourceTree = "<group>"; };
 		C384E000152EE36B000EEA60 /* ConfigurationReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationReader.m; sourceTree = "<group>"; };
+		C39FF30115A5D7FD00BF82A1 /* phresco-env-config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "phresco-env-config.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 		0A626AD914C6FDF000A66002 = {
 			isa = PBXGroup;
 			children = (
-				C3074C1114DAD7F70075C8C7 /* JSLibs */,
 				0A626B0514C6FDF100A66002 /* Phresco */,
 				0A626AEA14C6FDF000A66002 /* Frameworks */,
 				0A626AE814C6FDF000A66002 /* Products */,
@@ -161,6 +158,7 @@
 		0A626B0614C6FDF100A66002 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C39FF30115A5D7FD00BF82A1 /* phresco-env-config.xml */,
 				0A626B0714C6FDF100A66002 /* Phresco-Info.plist */,
 				0A626B0814C6FDF100A66002 /* InfoPlist.strings */,
 				0A626B0B14C6FDF100A66002 /* main.m */,
@@ -230,15 +228,6 @@
 				0A626B2E14C6FDF100A66002 /* README */,
 			);
 			name = Plugins;
-			sourceTree = "<group>";
-		};
-		C3074C1114DAD7F70075C8C7 /* JSLibs */ = {
-			isa = PBXGroup;
-			children = (
-				C3074C1214DAD7F70075C8C7 /* jquery-1.7.1.js */,
-				C3074C1314DAD7F70075C8C7 /* plist_parser.js */,
-			);
-			path = JSLibs;
 			sourceTree = "<group>";
 		};
 		C384DFFE152EE36B000EEA60 /* ConfigurationReader */ = {
@@ -314,6 +303,7 @@
 				0A626B2614C6FDF100A66002 /* Capture.bundle in Resources */,
 				0A626B2814C6FDF100A66002 /* PhoneGap.plist in Resources */,
 				0A626B3514C6FEB700A66002 /* www in Resources */,
+				C39FF30215A5D7FD00BF82A1 /* phresco-env-config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,8 +332,6 @@
 			files = (
 				0A626B0C14C6FDF100A66002 /* main.m in Sources */,
 				0A626B2C14C6FDF100A66002 /* AppDelegate.m in Sources */,
-				C3074C1414DAD7F70075C8C7 /* jquery-1.7.1.js in Sources */,
-				C3074C1514DAD7F70075C8C7 /* plist_parser.js in Sources */,
 				C384E001152EE36B000EEA60 /* ConfigurationReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +379,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -406,6 +395,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -416,7 +407,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -424,6 +416,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -433,14 +427,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Photon Infotech Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Photon Infotech Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Phresco/Phresco-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "Phresco/Phresco-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -453,8 +448,8 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "21441E8F-A0C2-4E98-A582-00106666E329";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "21441E8F-A0C2-4E98-A582-00106666E329";
+				PROVISIONING_PROFILE = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,14 +459,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Photon Infotech Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Phresco/Phresco-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "Phresco/Phresco-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -484,13 +480,73 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "21441E8F-A0C2-4E98-A582-00106666E329";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
+		};
+		C396C2EA15A4426300547AA4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		C396C2EB15A4426300547AA4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukund Balasubramanian (JJ5TQ44E7M)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Phresco/Phresco-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "Phresco/Phresco-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "696ED0EE-22DB-4D9B-A4B4-8280CA7A181F";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
 		};
 /* End XCBuildConfiguration section */
 
@@ -499,6 +555,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A626B2F14C6FDF100A66002 /* Debug */,
+				C396C2EA15A4426300547AA4 /* Distribution */,
 				0A626B3014C6FDF100A66002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -508,6 +565,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A626B3214C6FDF100A66002 /* Debug */,
+				C396C2EB15A4426300547AA4 /* Distribution */,
 				0A626B3314C6FDF100A66002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

@@ -73,7 +73,7 @@
 	//NSLog(@"ended element: %@", elementName);
    
     envVar = @"mywebservice";
-    if (([envVar isEqualToString:thisLength])&& ([thisURL isEqualToString:@"true"])){
+    //if (([envVar isEqualToString:thisLength])&& ([thisURL isEqualToString:@"true"])){
         // if(@"webservice") {
         if ([elementName isEqualToString:@"Server"]){
             // save values to an item, then store that item into the array...
@@ -85,7 +85,7 @@
             NSLog(@"currentDate: %@", currentDate);
             [stories addObject:[item copy]];
             NSLog(@"adding story: %@", currentTitle);
-        }
+       // }
         // }
     }
      
@@ -103,7 +103,6 @@
 		[currentSummary appendString:string];
 	} else if ([currentElement isEqualToString:@"context"]) {
 		[currentDate appendString:string];
-        currentNode = @"";
 	}
          
      }
