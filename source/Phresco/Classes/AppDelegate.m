@@ -113,14 +113,14 @@
         {
             NSString *striPad = [[NSString alloc]initWithString:@"useragent=ipad"];
             
-            urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPad];
+            urlString = [NSString stringWithFormat:@"%@://%@:%@/%@?%@", protocol,host, port, context,striPad];
             NSLog(@"Configuration urlString: %@",urlString);
         }
         else {
             
             NSString *striPhone = [[NSString alloc]initWithString:@"useragent=iphone"];
             
-            urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPhone];
+            urlString = [NSString stringWithFormat:@"%@://%@:%@/%@?%@", protocol,host, port, context,striPhone];
             NSLog(@"Configuration urlString: %@",urlString);
         }
     }

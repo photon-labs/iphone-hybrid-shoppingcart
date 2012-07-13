@@ -103,7 +103,6 @@
 		[currentSummary appendString:string];
 	} else if ([currentElement isEqualToString:@"context"]) {
 		[currentDate appendString:string];
-        currentNode = @"";
 	}
          
      }
