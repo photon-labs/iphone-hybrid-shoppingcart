@@ -11,7 +11,7 @@
 @implementation ConfigurationReader
 @synthesize stories;
 
-- (void)parseXMLFileAtURL:(NSString *)config environment:(NSString *)name
+- (void)parseXMLFileAtURL:(NSString *)config
 {	
 	stories = [[NSMutableArray alloc] init];
 	
@@ -45,7 +45,7 @@
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{			
-    //NSLog(@"found this element: %@", elementName);
+    
 	currentElement = [elementName copy];
    // if(@"environment") {
 		if([elementName isEqualToString:@"environment"]) {
@@ -70,10 +70,10 @@
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{     
-	//NSLog(@"ended element: %@", elementName);
+	
    
-    envVar = @"mywebservice";
-    //if (([envVar isEqualToString:thisLength])&& ([thisURL isEqualToString:@"true"])){
+   
+    if ([thisURL isEqualToString:@"true"]){
         // if(@"webservice") {
         if ([elementName isEqualToString:@"Server"]){
             // save values to an item, then store that item into the array...
@@ -85,14 +85,14 @@
             NSLog(@"currentDate: %@", currentDate);
             [stories addObject:[item copy]];
             NSLog(@"adding story: %@", currentTitle);
-       // }
-        // }
+        }
+        
     }
      
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
-	//NSLog(@"found characters: %@", string);
+	
 	// save the characters for the current item...
     if([currentNode isEqualToString:@"Server"] ) {
 	if ([currentElement isEqualToString:@"host"]) {

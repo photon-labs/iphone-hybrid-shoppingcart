@@ -83,7 +83,7 @@
 -(void) urlParsing
 {
     ConfigurationReader *configReader = [[ConfigurationReader alloc]init];
-    [configReader parseXMLFileAtURL:@"phresco-env-config" environment:@"myWebservice"];
+    [configReader parseXMLFileAtURL:@"phresco-env-config"];
     
     NSString *protocol = [[configReader.stories objectAtIndex: 0] objectForKey:@"protocol"];
     protocol = [protocol stringByTrimmingCharactersInSet:
@@ -101,7 +101,7 @@
     context = [context stringByTrimmingCharactersInSet:
                [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    NSString *strCheck = [NSString stringWithFormat:@"%@://%@.%@/%@", protocol,host, port, context];
+    NSString *strCheck = [NSString stringWithFormat:@"%@://%@:%@/%@", protocol,host, port, context];
     if([strCheck isEqualToString:NULL])
     {
         UIAlertView *alertCheck = [[UIAlertView alloc]initWithTitle:@"" message:@"Server is unavailable" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
