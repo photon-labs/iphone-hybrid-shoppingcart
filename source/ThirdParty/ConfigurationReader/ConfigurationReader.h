@@ -50,6 +50,6 @@
 	NSMutableString * currentTitle, * currentDate, * currentSummary, * currentLink;
 }
 @property (nonatomic,retain) NSMutableArray * stories;
-- (void)parseXMLFileAtURL:(NSString *)config environment:(NSString *)name;
+- (void)parseXMLFileAtURL:(NSString *)config;
 
 @end

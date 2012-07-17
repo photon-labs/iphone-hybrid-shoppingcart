@@ -5,20 +5,19 @@
 //  Created by ARUNACHALAM LAKSHMANAN on 1/18/12.
 //  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
-
 #import "AppDelegate.h"
 #import "ConfigurationReader.h"
+
 #ifdef PHONEGAP_FRAMEWORK
-	#import <PhoneGap/PhoneGapViewController.h>
-    #import <PhoneGap/Reachability.h>
+#import <PhoneGap/PhoneGapViewController.h>
+#import <PhoneGap/Reachability.h>
 #else
-	#import "PhoneGapViewController.h"
+#import "PhoneGapViewController.h"
 #endif
 
 @implementation AppDelegate
 
 @synthesize invokeString;
-
 - (id) init
 {	
 	/** If you need to do any extra app-specific initialization, you can do it here
@@ -26,6 +25,7 @@
 	 **/
     return [super init];
 }
+
 
 /**
  * This is main kick off after the app inits, the views and Settings are setup here. (preferred - iOS4 and up)
@@ -63,12 +63,12 @@
     
     
     /*NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
-    if (url && [url isKindOfClass:[NSURL class]])
-    {
-        self.invokeString = [url absoluteString];
-		NSLog(@"Phresco launchOptions = %@",url);
-    }*/ 
-		
+     if (url && [url isKindOfClass:[NSURL class]])
+     {
+     self.invokeString = [url absoluteString];
+     NSLog(@"Phresco launchOptions = %@",url);
+     }*/
+    
 	return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -83,7 +83,7 @@
 -(void) urlParsing
 {
     ConfigurationReader *configReader = [[ConfigurationReader alloc]init];
-    [configReader parseXMLFileAtURL:@"phresco-env-config" environment:@"myWebservice"];
+    [configReader parseXMLFileAtURL:@"phresco-env-config"];
     
     NSString *protocol = [[configReader.stories objectAtIndex: 0] objectForKey:@"protocol"];
     protocol = [protocol stringByTrimmingCharactersInSet:
@@ -101,7 +101,7 @@
     context = [context stringByTrimmingCharactersInSet:
                [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    NSString *strCheck = [NSString stringWithFormat:@"%@://%@.%@/%@", protocol,host, port, context];
+    NSString *strCheck = [NSString stringWithFormat:@"%@://%@:%@/%@", protocol,host, port, context];
     if([strCheck isEqualToString:NULL])
     {
         UIAlertView *alertCheck = [[UIAlertView alloc]initWithTitle:@"" message:@"Server is unavailable" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
@@ -113,7 +113,7 @@
         {
             NSString *striPad = [[NSString alloc]initWithString:@"useragent=ipad"];
             
-            urlString = [NSString stringWithFormat:@"%@://%@:%@/%@?%@", protocol,host, port, context,striPad];
+            urlString = [NSString stringWithFormat:@"%@://%@.%@/%@?%@", protocol,host, port, context,striPad];
             NSLog(@"Configuration urlString: %@",urlString);
         }
         else {
@@ -126,7 +126,6 @@
     }
     
 }
-
 // this happens while we are running ( in the background, or from within our own app )
 // only valid if Phresco.plist specifies a protocol to handle
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url 
@@ -157,7 +156,7 @@
 		[theWebView stringByEvaluatingJavaScriptFromString:jsString];
 	}
 	
-	 // Black base color for background matches the native apps
+    // Black base color for background matches the native apps
    	theWebView.backgroundColor = [UIColor blackColor];
     
 	return [ super webViewDidFinishLoad:theWebView ];
@@ -184,7 +183,7 @@
  */
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-   // request = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString: @"http://172.16.23.65/mobile/"]];
+    // request = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString: @"http://172.16.23.65/mobile/"]];
     NSURL *url = [request URL];
     NSLog(@"URL:%@",url);
     if ([[url scheme] isEqualToString:@"http"] || [[url scheme] isEqualToString:@"https"]) {
