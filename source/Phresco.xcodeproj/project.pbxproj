@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02EBDBFD160B376200BF1484 /* PhoneGap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EBDBFC160B376200BF1484 /* PhoneGap.framework */; };
 		0A626AEC14C6FDF000A66002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AEB14C6FDF000A66002 /* Foundation.framework */; };
 		0A626AEE14C6FDF000A66002 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AED14C6FDF000A66002 /* UIKit.framework */; };
 		0A626AF014C6FDF000A66002 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AEF14C6FDF000A66002 /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		0A626B0414C6FDF100A66002 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626B0314C6FDF100A66002 /* CoreMedia.framework */; };
 		0A626B0A14C6FDF100A66002 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B0814C6FDF100A66002 /* InfoPlist.strings */; };
 		0A626B0C14C6FDF100A66002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A626B0B14C6FDF100A66002 /* main.m */; };
-		0A626B0F14C6FDF100A66002 /* PhoneGap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626B0E14C6FDF100A66002 /* PhoneGap.framework */; };
 		0A626B1414C6FDF100A66002 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B1214C6FDF100A66002 /* Localizable.strings */; };
 		0A626B1814C6FDF100A66002 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B1614C6FDF100A66002 /* Localizable.strings */; };
 		0A626B1B14C6FDF100A66002 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B1A14C6FDF100A66002 /* icon.png */; };
@@ -37,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02EBDBFC160B376200BF1484 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = ThirdParty/PhoneGap.framework; sourceTree = SOURCE_ROOT; };
 		0A626AE714C6FDF000A66002 /* Phresco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phresco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A626AEB14C6FDF000A66002 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A626AED14C6FDF000A66002 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -55,7 +56,6 @@
 		0A626B0914C6FDF100A66002 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A626B0B14C6FDF100A66002 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A626B0D14C6FDF100A66002 /* Phresco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Phresco-Prefix.pch"; sourceTree = "<group>"; };
-		0A626B0E14C6FDF100A66002 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		0A626B1314C6FDF100A66002 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0A626B1714C6FDF100A66002 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0A626B1A14C6FDF100A66002 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				0A626B0014C6FDF100A66002 /* SystemConfiguration.framework in Frameworks */,
 				0A626B0214C6FDF100A66002 /* MobileCoreServices.framework in Frameworks */,
 				0A626B0414C6FDF100A66002 /* CoreMedia.framework in Frameworks */,
-				0A626B0F14C6FDF100A66002 /* PhoneGap.framework in Frameworks */,
+				02EBDBFD160B376200BF1484 /* PhoneGap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +144,9 @@
 		0A626B0514C6FDF100A66002 /* Phresco */ = {
 			isa = PBXGroup;
 			children = (
+				02EBDBFC160B376200BF1484 /* PhoneGap.framework */,
 				C384DFFE152EE36B000EEA60 /* ConfigurationReader */,
 				0A626B3414C6FEB700A66002 /* www */,
-				0A626B0E14C6FDF100A66002 /* PhoneGap.framework */,
 				0A626B1014C6FDF100A66002 /* Resources */,
 				0A626B2914C6FDF100A66002 /* Classes */,
 				0A626B2D14C6FDF100A66002 /* Plugins */,
@@ -424,7 +424,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Photon Infotech Inc.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Photon Infotech Inc.";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/Shared/PhoneGap/Frameworks,
+					"\"$(SRCROOT)/ThirdParty\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Phresco/Phresco-Prefix.pch";
@@ -456,7 +459,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/Shared/PhoneGap/Frameworks,
+					"\"$(SRCROOT)/ThirdParty\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Phresco/Phresco-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
