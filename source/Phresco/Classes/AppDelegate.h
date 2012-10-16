@@ -30,7 +30,7 @@
 	#import <PhoneGap/PhoneGapDelegate.h>
     #import <PhoneGap/Reachability.h>
 #else
-	#import "PhoneGapDelegate.h"
+	#import <PhoneGap/PhoneGapDelegate.h>
 #endif
 
 @interface AppDelegate : PhoneGapDelegate {
