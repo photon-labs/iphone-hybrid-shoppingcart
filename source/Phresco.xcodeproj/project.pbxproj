@@ -34,6 +34,14 @@
 		0A626B3514C6FEB700A66002 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 0A626B3414C6FEB700A66002 /* www */; };
 		C384E001152EE36B000EEA60 /* ConfigurationReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C384E000152EE36B000EEA60 /* ConfigurationReader.m */; };
 		C39FF30815A5D86A00BF82A1 /* phresco-env-config.xml in Resources */ = {isa = PBXBuildFile; fileRef = C39FF30715A5D86A00BF82A1 /* phresco-env-config.xml */; };
+		EAEB4738162DA151003490EA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD74CB2162D67C0008FB584 /* SenTestingKit.framework */; };
+		EAEB4739162DA151003490EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AED14C6FDF000A66002 /* UIKit.framework */; };
+		EAEB473A162DA151003490EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A626AEB14C6FDF000A66002 /* Foundation.framework */; };
+		EAEB4740162DA151003490EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEB473E162DA151003490EA /* InfoPlist.strings */; };
+		EAEB4743162DA151003490EA /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB4742162DA151003490EA /* LogicTest.m */; };
+		EAEB474F162DA203003490EA /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB474E162DA203003490EA /* libxml2.2.7.3.dylib */; };
+		EAEB4753162DA359003490EA /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB4751162DA359003490EA /* GDataXMLNode.m */; };
+		EAEB4754162DA359003490EA /* OCUnitToJUnitLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB4752162DA359003490EA /* OCUnitToJUnitLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +78,18 @@
 		C384DFFF152EE36B000EEA60 /* ConfigurationReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationReader.h; sourceTree = "<group>"; };
 		C384E000152EE36B000EEA60 /* ConfigurationReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationReader.m; sourceTree = "<group>"; };
 		C39FF30715A5D86A00BF82A1 /* phresco-env-config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "phresco-env-config.xml"; sourceTree = "<group>"; };
+		EAD74CB2162D67C0008FB584 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EAD74CC4162D6838008FB584 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EAEB4737162DA151003490EA /* LogicTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEB473D162DA151003490EA /* LogicTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTest-Info.plist"; sourceTree = "<group>"; };
+		EAEB473F162DA151003490EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAEB4741162DA151003490EA /* LogicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicTest.h; sourceTree = "<group>"; };
+		EAEB4742162DA151003490EA /* LogicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicTest.m; sourceTree = "<group>"; };
+		EAEB4744162DA151003490EA /* LogicTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicTest-Prefix.pch"; sourceTree = "<group>"; };
+		EAEB474E162DA203003490EA /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
+		EAEB4750162DA359003490EA /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = "ThirdParty/OCUnitReportLogger-1.0/GDataXMLNode.h"; sourceTree = SOURCE_ROOT; };
+		EAEB4751162DA359003490EA /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = "ThirdParty/OCUnitReportLogger-1.0/GDataXMLNode.m"; sourceTree = SOURCE_ROOT; };
+		EAEB4752162DA359003490EA /* OCUnitToJUnitLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCUnitToJUnitLogger.m; path = "ThirdParty/OCUnitReportLogger-1.0/OCUnitToJUnitLogger.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +121,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAEB4733162DA151003490EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEB474F162DA203003490EA /* libxml2.2.7.3.dylib in Frameworks */,
+				EAEB4738162DA151003490EA /* SenTestingKit.framework in Frameworks */,
+				EAEB4739162DA151003490EA /* UIKit.framework in Frameworks */,
+				EAEB473A162DA151003490EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0A626AD914C6FDF000A66002 = {
 			isa = PBXGroup;
 			children = (
+				EAEB474E162DA203003490EA /* libxml2.2.7.3.dylib */,
+				EAD74CC4162D6838008FB584 /* SenTestingKit.framework */,
 				0A626B0514C6FDF100A66002 /* Phresco */,
+				EAEB473B162DA151003490EA /* LogicTest */,
 				0A626AEA14C6FDF000A66002 /* Frameworks */,
 				0A626AE814C6FDF000A66002 /* Products */,
 			);
@@ -117,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				0A626AE714C6FDF000A66002 /* Phresco.app */,
+				EAEB4737162DA151003490EA /* LogicTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +172,7 @@
 				0A626AFF14C6FDF100A66002 /* SystemConfiguration.framework */,
 				0A626B0114C6FDF100A66002 /* MobileCoreServices.framework */,
 				0A626B0314C6FDF100A66002 /* CoreMedia.framework */,
+				EAD74CB2162D67C0008FB584 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +276,29 @@
 			path = ThirdParty/ConfigurationReader;
 			sourceTree = SOURCE_ROOT;
 		};
+		EAEB473B162DA151003490EA /* LogicTest */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB4750162DA359003490EA /* GDataXMLNode.h */,
+				EAEB4751162DA359003490EA /* GDataXMLNode.m */,
+				EAEB4752162DA359003490EA /* OCUnitToJUnitLogger.m */,
+				EAEB4741162DA151003490EA /* LogicTest.h */,
+				EAEB4742162DA151003490EA /* LogicTest.m */,
+				EAEB473C162DA151003490EA /* Supporting Files */,
+			);
+			path = LogicTest;
+			sourceTree = "<group>";
+		};
+		EAEB473C162DA151003490EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAEB473D162DA151003490EA /* LogicTest-Info.plist */,
+				EAEB473E162DA151003490EA /* InfoPlist.strings */,
+				EAEB4744162DA151003490EA /* LogicTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +322,24 @@
 			productReference = 0A626AE714C6FDF000A66002 /* Phresco.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EAEB4736162DA151003490EA /* LogicTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEB4745162DA151003490EA /* Build configuration list for PBXNativeTarget "LogicTest" */;
+			buildPhases = (
+				EAEB4732162DA151003490EA /* Sources */,
+				EAEB4733162DA151003490EA /* Frameworks */,
+				EAEB4734162DA151003490EA /* Resources */,
+				EAEB4735162DA151003490EA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicTest;
+			productName = LogicTest;
+			productReference = EAEB4737162DA151003490EA /* LogicTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,6 +362,7 @@
 			projectRoot = "";
 			targets = (
 				0A626AE614C6FDF000A66002 /* Phresco */,
+				EAEB4736162DA151003490EA /* LogicTest */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAEB4734162DA151003490EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEB4740162DA151003490EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -322,6 +408,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "\n\t\t\t\t\t\t\t\tif [ ! -d \"$PROJECT_DIR/www\" ] ; then\n\t\t\t\t\t\t\t\t\tcp -R /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/www \"$PROJECT_DIR\"\n\t\t\t\t\t\t\t\tfi\n\t\t\t\t\t\t\t\t# detect www folder reference in project, if missing, print warning\n\t\t\t\t\t\t\t\tgrep \"{isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = \\\"<group>\\\"; };\" \"$PROJECT_DIR/$PROJECT_NAME.xcodeproj/project.pbxproj\"\n\t\t\t\t\t\t\t\trc=$? \n\t\t\t\t\t\t\t\tif [ $rc != 0 ] ; then\n\t\t\t\t\t\t\t\techo -e \"warning: Missing - Add $PROJECT_DIR/www as a folder reference in your project. Just drag and drop the folder into your project, into the Project Navigator of Xcode 4. Make sure you select the second radio-button: 'Create folder references for any added folders' (which will create a blue folder)\" 1>&2\n\t\t\t\t\t\t\t\tfi\t\t\t\t\t\t\t";
+		};
+		EAEB4735162DA151003490EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -340,6 +439,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB4732162DA151003490EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEB4743162DA151003490EA /* LogicTest.m in Sources */,
+				EAEB4753162DA359003490EA /* GDataXMLNode.m in Sources */,
+				EAEB4754162DA359003490EA /* OCUnitToJUnitLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +477,14 @@
 				0A626B1714C6FDF100A66002 /* es */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EAEB473E162DA151003490EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEB473F162DA151003490EA /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -486,6 +603,48 @@
 			};
 			name = Release;
 		};
+		EAEB4746162DA151003490EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicTest/LogicTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "LogicTest/LogicTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EAEB4747162DA151003490EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicTest/LogicTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "LogicTest/LogicTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,6 +665,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		EAEB4745162DA151003490EA /* Build configuration list for PBXNativeTarget "LogicTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEB4746162DA151003490EA /* Debug */,
+				EAEB4747162DA151003490EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
