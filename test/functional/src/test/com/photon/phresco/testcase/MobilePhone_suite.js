@@ -5,7 +5,6 @@
 function testMobilePhone(testname){
 	try{
 		
-		UIALogger.logStart(testname);
 		clickOnScroll(Browse_id);
 		waitForFewSeconds(1);
 		clickOnScroll(MobilePhone_id);
@@ -22,15 +21,13 @@ function testMobilePhone(testname){
 		clickOnScroll(Remove_id);
 		waitForFewSeconds(1);		
 		clickOnScroll(Back_id);
+		UIALogger.logPass(testname);
 		
-		}
-	  	
-	catch(exception){		
-			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(exception);
-			throw exception;					
-		}
 	}
-
+	catch(error){		
+			captureScreenshot(testname);			
+			//UIALogger.logFail("Fail");
+			UIALogger.logError(testname);	
+	}
+}
 testMobilePhone("MobilePhoneTest");

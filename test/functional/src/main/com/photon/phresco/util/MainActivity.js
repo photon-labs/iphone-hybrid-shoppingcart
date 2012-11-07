@@ -52,9 +52,7 @@ function clickOnText(text){
  It till tap the button if it exists in given time
  It will Capture the screen if button not exists in given time
  */
-//function clickScroll(button){
-///	mainwindow.scrollViews()[0].webViews()[0].links()[button].tap();
-//}
+
 
 function clickOnScroll(button){
 	
