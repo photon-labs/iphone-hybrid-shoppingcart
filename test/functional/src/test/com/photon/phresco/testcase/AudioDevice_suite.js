@@ -5,7 +5,6 @@
 function testAudioDevice(testname){
 	try{
 		
-		UIALogger.logStart(testname);
 		clickOnScroll(Browse_id);
 		clickOnScroll(AudioDevice_id);
 		clickOnScreen(110,127);
@@ -21,15 +20,13 @@ function testAudioDevice(testname){
 		waitForFewSeconds(1);
 		clickOnScroll(Remove_id);
 		clickOnScroll(Back_id);
+		UIALogger.logPass(testname);
 		
-		}
-	  	
-	catch(exception){		
-			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(exception);
-			throw exception;					
-		}
 	}
-
+	catch(error){		
+			captureScreenshot(testname);			
+			//UIALogger.logFail("Fail");
+			UIALogger.logError(testname);	
+	}
+}
 testAudioDevice("AudioDeviceTest");

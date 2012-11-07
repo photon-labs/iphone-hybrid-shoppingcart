@@ -5,7 +5,6 @@
 function testTelevision(testname){
 	try{
 		
-		UIALogger.logStart(testname);
 		clickOnScroll(Browse_id);		
 		clickOnScroll(Television_id);
 		waitForFewSeconds(1);
@@ -22,19 +21,15 @@ function testTelevision(testname){
 		clickOnScroll(Remove_id);
 		waitForFewSeconds(1);		
 		clickOnScroll(Back_id);
+		UIALogger.logPass(testname);
 		
-		
-		}
-	  	
-	catch(exception){		
+	}	
+	catch(error){		
 			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(exception);
-			throw exception;					
-		}
+			//UIALogger.logFail("Fail");
+			UIALogger.logError(testname);		
 	}
-
-
+}
 testTelevision("TelvisionTest");
 
 

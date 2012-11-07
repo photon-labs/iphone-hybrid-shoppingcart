@@ -5,7 +5,6 @@
 function testCamera(testname){
 	try{
 		
-		UIALogger.logStart(testname);
 		clickOnScroll(Browse_id);
 		clickOnScroll(Camera_id);
 		waitForFewSeconds(1);
@@ -21,14 +20,13 @@ function testCamera(testname){
 		clickOnScreen(259,223);
 		waitForFewSeconds(1);
 		clickOnScroll(Remove_id);
-		clickOnScroll(Back_id);		}
-	  	
-	catch(exception){		
+		clickOnScroll(Back_id);
+		UIALogger.logPass(testname);	
+	}	
+	catch(error){		
 			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(exception);
-			throw exception;					
-		}
+			//UIALogger.logFail("Fail");
+			UIALogger.logError(testname);	
 	}
-
+}
 testCamera("CameraTest");

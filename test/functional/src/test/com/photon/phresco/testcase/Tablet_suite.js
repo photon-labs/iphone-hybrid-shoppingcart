@@ -4,7 +4,7 @@
 
 function testTablet(testname){
 	try{
-		UIALogger.logStart(testname);
+		
 		clickOnScroll(Browse_id);
 		waitForFewSeconds(1);
 		clickOnScroll(Tablet_id);
@@ -20,15 +20,13 @@ function testTablet(testname){
 		clickOnScroll(Remove_id);
 		waitForFewSeconds(1);		
 		clickOnScroll(Invali_ID);
+		UIALogger.logPass(testname);
 		
 	}
-	
-	catch(exception){		
+	catch(error){		
 			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(exception);
-			throw exception;					
-		}
+			//UIALogger.logFail("Fail");
+			UIALogger.logError(testname);	
 	}
-
+}
 testTablet("TabletTest");

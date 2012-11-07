@@ -5,7 +5,6 @@
 function testComputer(testname){
 	try{
 		
-		UIALogger.logStart(testname);
 		clickOnScroll(Browse_id);
 		clickOnScroll(Computer_id);
 		clickOnScreen(110,127);
@@ -21,16 +20,14 @@ function testComputer(testname){
 		clickOnScroll(Remove_id);
 		waitForFewSeconds(1);
 		clickOnScroll(Back_id);
-		
+		UIALogger.logPass(testname);
 		
 		}
 	  	
-	catch(exception){		
+	catch(error){		
 			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(exception);
-			throw exception;					
-		}
+			//UIALogger.logFail("Fail");
+			UIALogger.logError(testname);	
 	}
-
+}
 testComputer("ComputerTest");
