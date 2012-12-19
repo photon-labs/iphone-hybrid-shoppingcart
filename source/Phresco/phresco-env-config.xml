@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><environments>
+    <environment default="true" name="Production">
+        <WebService name="eshop">
+            <port>8080</port>
+            <password/>
+            <context>mobilewidget</context>
+            <host>172.16.17.180</host>
+            <protocol>http</protocol>
+            <username/>
+        </WebService>
+    </environment>
+</environments>
