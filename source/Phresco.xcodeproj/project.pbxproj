@@ -10,8 +10,6 @@
 		060932C416818D3E00472ED5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060932A916818CCB00472ED5 /* SenTestingKit.framework */; };
 		060932C516818D3E00472ED5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		060932C616818D3E00472ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		060932CC16818D3E00472ED5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 060932CA16818D3E00472ED5 /* InfoPlist.strings */; };
-		060932CF16818D3E00472ED5 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 060932CE16818D3E00472ED5 /* UnitTests.m */; };
 		060932E316818EE900472ED5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 060932E216818EE900472ED5 /* Reachability.m */; };
 		061BD0371680811300C880EC /* www in Resources */ = {isa = PBXBuildFile; fileRef = 061BD0361680811300C880EC /* www */; };
 		061BD03A1680815600C880EC /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 061BD0351680810100C880EC /* libCordova.a */; };
@@ -74,11 +72,6 @@
 		060932B816818CCB00472ED5 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		060932BA16818CCB00472ED5 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		060932C316818D3E00472ED5 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		060932C916818D3E00472ED5 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
-		060932CB16818D3E00472ED5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		060932CD16818D3E00472ED5 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
-		060932CE16818D3E00472ED5 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
-		060932D016818D3E00472ED5 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		060932E116818EE900472ED5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Phresco/Classes/Reachability.h; sourceTree = "<group>"; };
 		060932E216818EE900472ED5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Phresco/Classes/Reachability.m; sourceTree = "<group>"; };
 		061BD02D1680810000C880EC /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = Thirdparty/Cordova/CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
@@ -186,26 +179,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		060932C716818D3E00472ED5 /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				060932CD16818D3E00472ED5 /* UnitTests.h */,
-				060932CE16818D3E00472ED5 /* UnitTests.m */,
-				060932C816818D3E00472ED5 /* Supporting Files */,
-			);
-			path = UnitTests;
-			sourceTree = "<group>";
-		};
-		060932C816818D3E00472ED5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				060932C916818D3E00472ED5 /* UnitTests-Info.plist */,
-				060932CA16818D3E00472ED5 /* InfoPlist.strings */,
-				060932D016818D3E00472ED5 /* UnitTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		060932E016818EDB00472ED5 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,7 +268,6 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				060932B116818CCB00472ED5 /* UnitTests */,
-				060932C716818D3E00472ED5 /* UnitTests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -485,7 +457,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				060932CC16818D3E00472ED5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +515,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				060932CF16818D3E00472ED5 /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,14 +545,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				060932B516818CCB00472ED5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		060932CA16818D3E00472ED5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				060932CB16818D3E00472ED5 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -697,7 +659,7 @@
 				INFOPLIST_FILE = "Phresco/Phresco-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Phresco;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -715,7 +677,7 @@
 				INFOPLIST_FILE = "Phresco/Phresco-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Phresco;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
