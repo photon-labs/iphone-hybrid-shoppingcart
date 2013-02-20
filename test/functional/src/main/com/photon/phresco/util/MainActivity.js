@@ -209,5 +209,44 @@ function clickOnTableCell(CellValues){
 	}
 }
 
+function clickOnStaticText(text){
+	
+	var scroll = isStaticTextExist(text);
+	UIALogger.logMessage("---StaticText Exists---");
+	scroll.tap();
+}
+
+
+function isStaticTextExist(text){
+	
+	if(button!=null){
+		for(var i=0;i<=j;i++){
+			var scrollview=mainwindow.scrollViews()[0].webViews()[0].links()[6].staticTexts()[text];
+			if(scrollview.isVisible() && scrollview.isEnabled()){
+				return scrollview;
+			}
+			else{
+				if(i==j){
+					UIALogger.logMessage("Assertion failed  Excepcted value is:"+ scrollview.name()+"     Getting value is: "+ button);
+					UIALogger.logMessage("---StaticText not Exists---");
+					throw error;
+					
+				}
+				else{
+					UIALogger.logMessage("---Waiting for StaticText to exist---");
+					target.delay(1);
+				}
+			}
+		}
+	}
+	
+	else{
+		
+		UIALogger.logMessage("-----------ScrollView  Value is empty-------------");
+	}
+}
+
+
+
 
 launchingApplication("---Launching the application---");

@@ -5,27 +5,32 @@
 function testTablet(testname){
 	try{
 		
-		clickOnScroll(Browse_id);
+		//clickOnScroll(Browse_id);
 		waitForFewSeconds(1);
 		clickOnScroll(Tablet_id);
 		clickOnScreen(110,127);
-		clickOnScreen(184,211);
+		waitForFewSeconds(3);
+		clickOnScreen(184,231);
+		waitForFewSeconds(3);
 		clickOnScreen(259,223);
+		waitForFewSeconds(3);
 		clickOnScroll(UpdateCart_id);
+		waitForFewSeconds(3);
 		clickOnScroll(Checkout_id);
+		waitForFewSeconds(3);
 		clickOnScreen(259,223);
 		clickOnScroll(MyCart_id);
 		waitForFewSeconds(1);
 		clickOnScreen(259,223);
 		clickOnScroll(Remove_id);
 		waitForFewSeconds(1);		
-		clickOnScroll(Invali_ID);
+		clickOnScroll(Back_id);
 		UIALogger.logPass(testname);
 		
 	}
 	catch(error){		
 			captureScreenshot(testname);			
-			//UIALogger.logFail("Fail");
+			UIALogger.logFail("Fail");
 			UIALogger.logError(testname);	
 	}
 }

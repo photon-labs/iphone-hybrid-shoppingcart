@@ -5,11 +5,16 @@
 function testMovieAndMusic(testname){
 	try{
 		
-		clickOnScroll(Browse_id);		
+		//clickOnScroll(Browse_id);
+		waitForFewSeconds(3)
 		mainwindow.scrollViews()[0].webViews()[0].links()[MovieAndMusic_id].tap();
+		waitForFewSeconds(3)
 		clickOnScreen(110,127);
-		clickOnScreen(184,211);
+		waitForFewSeconds(3);
+		clickOnScreen(184,231);
+		waitForFewSeconds(3);
 		clickOnScreen(259,223);
+		waitForFewSeconds(3);
 		clickOnScroll(UpdateCart_id);
 		waitForFewSeconds(2);		
 		clickOnScroll(Checkout_id);
@@ -26,7 +31,7 @@ function testMovieAndMusic(testname){
 	}
 	catch(error){		
 			captureScreenshot(testname);			
-			//UIALogger.logFail("Fail");
+			UIALogger.logFail("Fail");
 			UIALogger.logError(testname);	
 	}
 }

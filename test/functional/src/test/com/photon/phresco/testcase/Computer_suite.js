@@ -5,10 +5,12 @@
 function testComputer(testname){
 	try{
 		
-		clickOnScroll(Browse_id);
+		//clickOnScroll(Browse_id);
 		clickOnScroll(Computer_id);
 		clickOnScreen(110,127);
-		clickOnScreen(184,211);
+		waitForFewSeconds(3);
+		clickOnScreen(184,231);
+		waitForFewSeconds(3);
 		clickOnScreen(259,223);
 		clickOnScroll(UpdateCart_id);
 		waitForFewSeconds(1);
@@ -26,7 +28,7 @@ function testComputer(testname){
 	  	
 	catch(error){		
 			captureScreenshot(testname);			
-			//UIALogger.logFail("Fail");
+			UIALogger.logFail("Fail");
 			UIALogger.logError(testname);	
 	}
 }

@@ -9,10 +9,13 @@ function testTelevision(testname){
 		clickOnScroll(Television_id);
 		waitForFewSeconds(1);
 		clickOnScreen(110,127);
-		clickOnScreen(184,211);
-		clickOnScreen(259,223);
 		waitForFewSeconds(1);
+		clickOnScreen(184,231);
+		waitForFewSeconds(1);
+		clickOnScreen(259,223);
+		waitForFewSeconds(2);
 		clickOnScroll(UpdateCart_id);
+		waitForFewSeconds(2);
 		clickOnScroll(Checkout_id);
 		waitForFewSeconds(1);
 		clickOnScreen(259,223);
@@ -26,7 +29,7 @@ function testTelevision(testname){
 	}	
 	catch(error){		
 			captureScreenshot(testname);			
-			//UIALogger.logFail("Fail");
+			UIALogger.logFail("Fail");
 			UIALogger.logError(testname);		
 	}
 }
