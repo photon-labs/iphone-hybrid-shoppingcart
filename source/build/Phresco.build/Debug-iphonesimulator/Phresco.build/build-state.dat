@@ -1,559 +1,0 @@
-TPhresco
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Info.plist Phresco/Phresco-Info.plist
-cCpResource Phresco/Resources/icons/icon.png build/Phresco.app/icon.png
-cCpResource Phresco/Resources/Capture.bundle build/Phresco.app/Capture.bundle
-cCpResource Phresco/config.xml build/Phresco.app/config.xml
-cCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/en.lproj/Localizable.strings Phresco/Resources/en.lproj/Localizable.strings
-cCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/es.lproj/Localizable.strings Phresco/Resources/es.lproj/Localizable.strings
-cCompileXIB /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib
-cCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/de.lproj/Localizable.strings Phresco/Resources/de.lproj/Localizable.strings
-cCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/se.lproj/Localizable.strings Phresco/Resources/se.lproj/Localizable.strings
-cCpResource Thirdparty/cordova/www build/Phresco.app/www
-cCpResource phresco-env-config.xml build/Phresco.app/phresco-env-config.xml
-cCpResource Phresco/Resources/images/Icon.png build/Phresco.app/Icon.png
-cCpResource Default-Portrait~ipad.png build/Phresco.app/Default-Portrait~ipad.png
-cCpResource Default.png build/Phresco.app/Default.png
-cProcessPCH /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.pth Phresco/Phresco-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco normal i386
-cGenerateDSYMFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco
-cTouch /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
-c00000000504916AD0000000000000110
-t1346967213
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c00000000506D651F00000000001EAFC0
-t1349346591
-s2011072
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-c00000000506D651E00000000000C0EF0
-t1349346590
-s790256
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
-c00000000506D651F0000000000193640
-t1349346591
-s1652288
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c00000000506D651F00000000000225D0
-t1349346591
-s140752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c00000000506D651F00000000003D2B80
-t1349346591
-s4008832
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c00000000506D651F0000000000215D60
-t1349346591
-s2186592
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000506D651F0000000000228FD0
-t1349346591
-s2265040
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c00000000506D651F000000000009C220
-t1349346591
-s639520
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-c00000000506D651F0000000000085620
-t1349346591
-s546336
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000506D652000000000003DCEF0
-t1349346592
-s4050672
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-c00000000506D652200000000002C6C10
-t1349346594
-s2911248
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c00000000506D652200000000000BCB50
-t1349346594
-s772944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c00000000506D652300000000001D57A0
-t1349346595
-s1922976
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c00000000506D6523000000000006CC50
-t1349346595
-s445520
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000506D65250000000000AB3D60
-t1349346597
-s11222368
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Default-Portrait~ipad.png
-c00000000516BE65B000000000001B5AA
-t1366025819
-s112042
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Default.png
-c00000000516BE65B000000000001B5AA
-t1366025819
-s112042
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m
-c00000000516BE65B00000000000019EF
-t1366025819
-s6639
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m
-c00000000516BE65B0000000000001268
-t1366025819
-s4712
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib
-c00000000516BE65B0000000000001759
-t1366025819
-s5977
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m
-c00000000516BE65B00000000000025EF
-t1366025819
-s9711
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Phresco-Prefix.pch
-c00000000516BE65B00000000000003BF
-t1366025819
-s959
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/Capture.bundle
-c00000000516BE65B000000000000030E
-t1366025819
-s782
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/de.lproj/Localizable.strings
-c00000000516BE65B0000000000000485
-t1366025819
-s1157
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/en.lproj/Localizable.strings
-c00000000516BE65B0000000000000470
-t1366025819
-s1136
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/es.lproj/Localizable.strings
-c00000000516BE65B000000000000047D
-t1366025819
-s1149
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/icons/icon.png
-c00000000516BE65B0000000000000F3E
-t1366025819
-s3902
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/images/Icon.png
-c00000000516BE65B0000000000001965
-t1366025819
-s6501
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/se.lproj/Localizable.strings
-c00000000516BE65B0000000000000471
-t1366025819
-s1137
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/config.xml
-c00000000516BE65B0000000000000B18
-t1366025819
-s2840
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m
-c00000000516BE65B0000000000000459
-t1366025819
-s1113
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m
-c00000000516BE65B0000000000001487
-t1366025819
-s5255
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/cordova/www
-c00000000516BE65B0000000000000154
-t1366025819
-s340
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Capture.bundle
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Default-Portrait~ipad.png
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Default.png
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Icon.png
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Info.plist
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/MainViewController.nib
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/PkgInfo
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/config.xml
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/de.lproj/Localizable.strings
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/en.lproj/Localizable.strings
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/es.lproj/Localizable.strings
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/icon.png
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/phresco-env-config.xml
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/se.lproj/Localizable.strings
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/www
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.o
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.o
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.o
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Phresco.LinkFileList
-c00000000516BE6E400000000000003F1
-t1366025956
-s1009
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.o
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.o
-t2
-s0
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/libCordova.a
-c00000000516BE6E40000000000342CD8
-t1366025956
-s3419352
-
-N/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/phresco-env-config.xml
-c00000000516BE65B0000000000000152
-t1366025819
-s338
-
-N/var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.pth
-t2
-s0
-
-NPhresco/Phresco-Info.plist
-c00000000516BE65B000000000000060C
-t1366025819
-s1548
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies72dde8641e1cb741^85ebe9641e1cb741^---0#1#0#--18"Check dependencies36"DA70B679-A24B-41B4-AB22-649F73C1CEB5-
-
-CCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387718757.466765
-e387718757.661885
-r1
-xCompileC
-xbuild/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.o
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m:32:
-o/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.h:78:58: warning: declaration of 'struct sockaddr_in' will not be visible outside of this function [-Wvisibility]
-o+ (Reachability*) reachabilityWithAddress: (const struct sockaddr_in*) hostAddress;
-o                                                         ^
-o/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m:80:29: warning: 'useSplashScreen' is deprecated: Deprecated in Cordova 2.5. Add/Remove the SplashScreen plugin instead of setting this property. [-Wdeprecated-declarations]
-o        self.viewController.useSplashScreen = YES;
-o                            ^
-o/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include/Cordova/CDVViewController.h:47:47: note: 'useSplashScreen' declared here
-o@property (nonatomic, readwrite, assign) BOOL useSplashScreen CDV_DEPRECATED(2.5, "Add/Remove the SplashScreen plugin instead of setting this property.");
-o                                              ^
-o2 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Compile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.mf0c177651e1cb741^f089a9651e1cb741^-1378"In file included from /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m:32:/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.h:78:58: warning: declaration of 'struct sockaddr_in' will not be visible outside of this function [-Wvisibility]+ (Reachability*) reachabilityWithAddress: (const struct sockaddr_in*) hostAddress;                                                         ^/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m:80:29: warning: 'useSplashScreen' is deprecated: Deprecated in Cordova 2.5. Add/Remove the SplashScreen plugin instead of setting this property. [-Wdeprecated-declarations]        self.viewController.useSplashScreen = YES;                            ^/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include/Cordova/CDVViewController.h:47:47: note: 'useSplashScreen' declared here@property (nonatomic, readwrite, assign) BOOL useSplashScreen CDV_DEPRECATED(2.5, "Add/Remove the SplashScreen plugin instead of setting this property.");                                              ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@80"Declaration of 'struct sockaddr_in' will not be visible outside of this function-387718757#18446744073709551615#0#1(2@165"In file included from /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m:32:-387718757#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@155"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m0000000000000000^31#8#31#8#1028#0#30"Apple LLVM compiler 4.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@156"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.h0000000000000000^77#57#77#57#3790#0#14"Semantic Issue--2@128"'useSplashScreen' is deprecated: Deprecated in Cordova 2.5. Add/Remove the SplashScreen plugin instead of setting this property.-387718757#18446744073709551615#0#1(2@31"'useSplashScreen' declared here-387718757#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@183"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/cordova/CordovaLib/Classes/CDVViewController.h0000000000000000^46#46#46#46#1832#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@155"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m0000000000000000^79#28#79#28#2654#0#12"Deprecations--0#0#0#-19%DVTDocumentLocation4@155"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m0000000000000000^4704"CompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.o Phresco/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-generated-files.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-own-target-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-all-target-headers.hmap -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-project-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/usr/local/lib/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/UninstalledProducts/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources/i386 -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -include /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch -MMD -MT dependencies -MF /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.dia -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/AppDelegate.m -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/AppDelegate.o36"BAEA6D6D-5673-4904-A691-4C7A7E391228-
-
-CCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387718757.466815
-e387718757.660515
-r1
-xCompileC
-xbuild/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.o
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection170"Compile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m44be77651e1cb741^e717a9651e1cb741^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m0000000000000000^4782"CompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.o Thirdparty/ConfigurationReader/ConfigurationReader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-generated-files.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-own-target-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-all-target-headers.hmap -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-project-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/usr/local/lib/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/UninstalledProducts/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources/i386 -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -include /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch -MMD -MT dependencies -MF /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.d --serialize-diagnostics /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.dia -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/ConfigurationReader/ConfigurationReader.m -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/ConfigurationReader.o36"17CA700D-CE11-4DA9-8353-F873F2822C76-
-
-CCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387718757.466803
-e387718757.658044
-r1
-xCompileC
-xbuild/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.o
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection154"Compile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m5cc877651e1cb741^5d89a8651e1cb741^---0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m0000000000000000^4746"CompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.o Phresco/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-generated-files.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-own-target-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-all-target-headers.hmap -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-project-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/usr/local/lib/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/UninstalledProducts/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources/i386 -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -include /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch -MMD -MT dependencies -MF /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.dia -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.m -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/MainViewController.o36"B27B1F63-FD6E-4DE3-8C8C-811DD21FE3E2-
-
-CCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387718757.554985
-e387718758.104006
-r1
-xCompileC
-xbuild/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.o
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Compile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m37528e651e1cb741^8ca31a661e1cb741^---0#0#0#-19%DVTDocumentLocation2@156"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m0000000000000000^4710"CompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.o Phresco/Classes/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-generated-files.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-own-target-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-all-target-headers.hmap -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-project-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/usr/local/lib/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/UninstalledProducts/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources/i386 -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -include /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch -MMD -MT dependencies -MF /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.d --serialize-diagnostics /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.dia -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/Reachability.m -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Reachability.o36"0E26D467-7D67-497E-B721-0F35FA76E8BB-
-
-CCompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387718757.466143
-e387718757.553701
-r1
-xCompileC
-xbuild/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.o
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Compile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m9f8e77651e1cb741^adbf8d651e1cb741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m0000000000000000^4646"CompileC build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.o Phresco/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-generated-files.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-own-target-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-all-target-headers.hmap -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-project-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/usr/local/lib/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/UninstalledProducts/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources/i386 -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -include /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch -MMD -MT dependencies -MF /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.dia -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/main.m -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/main.o36"B4686DAC-285A-440D-8EAD-1D17C1AF7871-
-
-CCompileXIB /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib
-s387718756.937939
-e387718757.060676
-r1
-xCompileXIB
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection158"Compiling /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib963ef0641e1cb741^db880f651e1cb741^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib0000000000000000^1269"CompileXIB Phresco/Classes/MainViewController.xib    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/MainViewController.nib /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Classes/MainViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"6B835D2B-649E-4DE2-BCB4-6FABB5BB3293-
-
-CCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/de.lproj/Localizable.strings Phresco/Resources/de.lproj/Localizable.strings
-s387718756.945286
-e387718756.995331
-r1
-xCopyStringsFile
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/de.lproj/Localizable.strings
-xPhresco/Resources/de.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy Phresco/Resources/de.lproj/Localizable.strings3291f2641e1cb741^ccd2fe641e1cb741^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/de.lproj/Localizable.strings0000000000000000^862"CopyStringsFile build/Phresco.app/de.lproj/Localizable.strings Phresco/Resources/de.lproj/Localizable.strings    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/de.lproj -- Phresco/Resources/de.lproj/Localizable.strings36"FA1F1BE5-8177-4335-BEAD-C58BFF0A7159-
-
-CCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/en.lproj/Localizable.strings Phresco/Resources/en.lproj/Localizable.strings
-s387718756.933372
-e387718756.942366
-r1
-xCopyStringsFile
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/en.lproj/Localizable.strings
-xPhresco/Resources/en.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy Phresco/Resources/en.lproj/Localizable.stringsb212ef641e1cb741^cc40f1641e1cb741^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/en.lproj/Localizable.strings0000000000000000^862"CopyStringsFile build/Phresco.app/en.lproj/Localizable.strings Phresco/Resources/en.lproj/Localizable.strings    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/en.lproj -- Phresco/Resources/en.lproj/Localizable.strings36"BF10A35F-F039-4023-9956-99A7826BA8B4-
-
-CCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/es.lproj/Localizable.strings Phresco/Resources/es.lproj/Localizable.strings
-s387718756.937928
-e387718756.950472
-r1
-xCopyStringsFile
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/es.lproj/Localizable.strings
-xPhresco/Resources/es.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy Phresco/Resources/es.lproj/Localizable.stringsa836f0641e1cb741^a453f3641e1cb741^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/es.lproj/Localizable.strings0000000000000000^862"CopyStringsFile build/Phresco.app/es.lproj/Localizable.strings Phresco/Resources/es.lproj/Localizable.strings    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/es.lproj -- Phresco/Resources/es.lproj/Localizable.strings36"CAFBA133-0A61-4941-8CC3-B1FF6098434F-
-
-CCopyStringsFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/se.lproj/Localizable.strings Phresco/Resources/se.lproj/Localizable.strings
-s387718756.947482
-e387718756.997895
-r1
-xCopyStringsFile
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/se.lproj/Localizable.strings
-xPhresco/Resources/se.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy Phresco/Resources/se.lproj/Localizable.strings745ef3641e1cb741^f486ff641e1cb741^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/se.lproj/Localizable.strings0000000000000000^862"CopyStringsFile build/Phresco.app/se.lproj/Localizable.strings Phresco/Resources/se.lproj/Localizable.strings    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/se.lproj -- Phresco/Resources/se.lproj/Localizable.strings36"3ECEF41F-07C5-46E0-9488-5A6653FFDD71-
-
-CCpResource Default-Portrait~ipad.png build/Phresco.app/Default-Portrait~ipad.png
-s387718757.049050
-e387718757.052670
-r1
-xCpResource
-xDefault-Portrait~ipad.png
-xbuild/Phresco.app/Default-Portrait~ipad.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/Phresco.app/Default-Portrait~ipad.pngb1c30c651e1cb741^397d0d651e1cb741^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Default-Portrait~ipad.png000000000080d041^938"CpResource "Default-Portrait~ipad.png" "build/Phresco.app/Default-Portrait~ipad.png"    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Default-Portrait~ipad.png" /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"649A9E95-A602-480E-BDB4-637000954F44-
-
-CCpResource Default.png build/Phresco.app/Default.png
-s387718757.051318
-e387718757.055091
-r1
-xCpResource
-xDefault.png
-xbuild/Phresco.app/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Copy build/Phresco.app/Default.png384b0d651e1cb741^471c0e651e1cb741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Default.png000000000080d041^890"CpResource Default.png build/Phresco.app/Default.png    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Default.png /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"B11922E7-B6B8-4D5D-BFBC-CEB17CC1662D-
-
-CCpResource Phresco/Resources/Capture.bundle build/Phresco.app/Capture.bundle
-s387718756.933357
-e387718756.943788
-r1
-xCpResource
-xPhresco/Resources/Capture.bundle
-xbuild/Phresco.app/Capture.bundle
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy build/Phresco.app/Capture.bundle6610ef641e1cb741^12faf1641e1cb741^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Capture.bundle000000000080d041^935"CpResource Phresco/Resources/Capture.bundle build/Phresco.app/Capture.bundle    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/Capture.bundle /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"52E909FE-B426-41C5-8EE1-732879BB1DE7-
-
-CCpResource Phresco/Resources/icons/icon.png build/Phresco.app/icon.png
-s387718756.933346
-e387718756.936658
-r1
-xCpResource
-xPhresco/Resources/icons/icon.png
-xbuild/Phresco.app/icon.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Copy build/Phresco.app/icon.pngae0fef641e1cb741^c1c8ef641e1cb741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/icon.png000000000080d041^929"CpResource Phresco/Resources/icons/icon.png build/Phresco.app/icon.png    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/icons/icon.png /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"8EEBC759-E958-4E21-BD1A-E0E33FDE45F4-
-
-CCpResource Phresco/Resources/images/Icon.png build/Phresco.app/Icon.png
-s387718756.999382
-e387718757.050142
-r1
-xCpResource
-xPhresco/Resources/images/Icon.png
-xbuild/Phresco.app/Icon.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Copy build/Phresco.app/Icon.png0ef9ff641e1cb741^0de10c651e1cb741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Icon.png0000000000000000^931"CpResource Phresco/Resources/images/Icon.png build/Phresco.app/Icon.png    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Resources/images/Icon.png /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"DF3DE634-F4CA-41EA-9BB2-21BB73B8D152-
-
-CCpResource Phresco/config.xml build/Phresco.app/config.xml
-s387718756.933365
-e387718756.937251
-r1
-xCpResource
-xPhresco/config.xml
-xbuild/Phresco.app/config.xml
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Copy build/Phresco.app/config.xml490fef641e1cb741^24f0ef641e1cb741^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/config.xml000000000080d041^903"CpResource Phresco/config.xml build/Phresco.app/config.xml    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/config.xml /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"63B94A71-6879-48E6-B2F7-EE04AEE5CC5E-
-
-CCpResource Thirdparty/cordova/www build/Phresco.app/www
-s387718756.951851
-e387718757.050125
-r1
-xCpResource
-xThirdparty/cordova/www
-xbuild/Phresco.app/www
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Copy build/Phresco.app/www1ac0f3641e1cb741^34d80c651e1cb741^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/www000000000080d041^904"CpResource Thirdparty/cordova/www build/Phresco.app/www    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Thirdparty/cordova/www /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"186723F0-22C7-437B-BD83-B610EA93772C-
-
-CCpResource phresco-env-config.xml build/Phresco.app/phresco-env-config.xml
-s387718756.996706
-e387718757.047262
-r1
-xCpResource
-xphresco-env-config.xml
-xbuild/Phresco.app/phresco-env-config.xml
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Copy build/Phresco.app/phresco-env-config.xmld653ff641e1cb741^581a0c651e1cb741^---0#0#0#-19%DVTDocumentLocation2@166"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/phresco-env-config.xml000000000080d041^923"CpResource phresco-env-config.xml build/Phresco.app/phresco-env-config.xml    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/phresco-env-config.xml /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"67475F01-EFEE-490B-A873-5820DFA6A1CE-
-
-CGenerateDSYMFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco
-s387718758.889041
-e387718759.141351
-r1
-xGenerateDSYMFile
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Generating /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM42afe3661e1cb741^d33024671e1cb741^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM000000000080d041^913"GenerateDSYMFile build/Phresco.app.dSYM build/Phresco.app/Phresco    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app.dSYM36"220FAD19-DAF0-41DE-8DD4-BCF9C88CE2FC-
-
-CLd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco normal i386
-s387718758.111857
-e387718758.881953
-r1
-xLd
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Link /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phrescofad51c661e1cb741^65c8e1661e1cb741^---0#0#0#--2142"Ld build/Phresco.app/Phresco normal i386    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -filelist /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Objects-normal/i386/Phresco.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework SystemConfiguration /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/libCordova.a -framework AssetsLibrary -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -weak_framework AVFoundation -framework CFNetwork -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework MobileCoreServices -weak_framework CoreMedia -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Phresco36"7429A5CC-E995-4D8C-80E7-739D16E45809-
-
-CProcessInfoPlistFile /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Info.plist Phresco/Phresco-Info.plist
-s387718756.920333
-e387718756.924333
-r1
-xProcessInfoPlistFile
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Info.plist
-xPhresco/Phresco-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process Phresco/Phresco-Info.plistedb6eb641e1cb741^9da1ec641e1cb741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Phresco-Info.plist0000000000000000^960"ProcessInfoPlistFile build/Phresco.app/Info.plist Phresco/Phresco-Info.plist    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-infoPlistUtility Phresco/Phresco-Info.plist -genpkginfo /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app/Info.plist36"A764EEA9-38CA-4569-B8FB-0CB8BDEF6A89-
-
-CProcessPCH /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.pth Phresco/Phresco-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387718757.068760
-e387718757.459247
-r1
-xProcessPCH
-x/var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.pth
-xPhresco/Phresco-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile Phresco/Phresco-Prefix.pche1ce11651e1cb741^d19075651e1cb741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Phresco-Prefix.pch0000000000000000^4491"ProcessPCH /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.pth Phresco/Phresco-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-generated-files.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-own-target-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-all-target-headers.hmap -iquote /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/Phresco-project-headers.hmap -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/usr/local/lib/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/UninstalledProducts/include -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources/i386 -I/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.build/Debug-iphonesimulator/Phresco.build/DerivedSources -F/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build --serialize-diagnostics /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.dia -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/Phresco/Phresco-Prefix.pch -o /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/ff/tns45hjj47137bpqh655bv300000gr/C/com.apple.Xcode.504/SharedPrecompiledHeaders/Phresco-Prefix-dktifwmdvcdyjfapeaqlrkcekqen/Phresco-Prefix.pch.d36"7DB2233C-2574-4752-AAF6-BDE0568F2AD4-
-
-CTouch /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app
-s387718759.150647
-e387718759.188309
-r1
-xTouch
-x/Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Touch /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app11ac26671e1cb741^9c3530671e1cb741^---0#0#0#--649"Touch build/Phresco.app    cd /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/shivakumar_ch/Downloads/Phresco-Build-2.1.0.4000/framework/phresco-framework/workspace/tools/build/Release:::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/shivakumar_ch/Documents/Projects/Eshop-hybrid-bug-fix/branch2.3-test/iphone-hybrid-shoppingcart/source/build/Phresco.app36"7BF810B4-7893-4FD6-9DC3-F511A6721114-
-
