@@ -2,25 +2,19 @@
 #import "../../../../../main/com/photon/phresco/util/UIElements.js"
 
 
-function testMobilePhone(testname){
+function testAudioDevice(testname){
 	try{
 		
-		//clickOnScroll(Browse_id);
-		waitForFewSeconds(1);
-		clickOnStatictext("Mobile Phones");	
+		clickOnScroll(Browse_id);
+		clickOnStatictext("Audio Devices");
 		waitForFewSeconds(1)
-		clickOnScroll("Apple iPhone 4");
-		waitForFewSeconds(1)
+		clickOnScroll("Pearstone B&H Kit Vocal Microphone Accessory Bundle - Deluxe");		
 		clickOnimages("7");
-		waitForFewSeconds(1)
-		target.frontMostApp().keyboard().typeString("2");
-		waitForFewSeconds(1)
-		target.frontMostApp().windows()[1].toolbar().buttons()["Done"].tap();
 		waitForFewSeconds(1)
 		clickOnStatictext("Remove");
 		waitForFewSeconds(1)
-		clickOnScroll("Browse");
-		
+		clickOnScroll("Browse");		
+		waitForFewSeconds(1)
 		UIALogger.logPass(testname);
 		
 	}
@@ -30,4 +24,4 @@ function testMobilePhone(testname){
 			UIALogger.logError(testname);	
 	}
 }
-testMobilePhone("MobilePhoneTest");
+testAudioDevice("AudioDeviceTest");

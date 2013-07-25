@@ -6,30 +6,85 @@ function testComputer(testname){
 	try{
 		
 		//clickOnScroll(Browse_id);
-		clickOnScroll(Computer_id);
-		clickOnScreen(110,127);
-		waitForFewSeconds(3);
-		clickOnScreen(184,231);
-		waitForFewSeconds(3);
-		clickOnScreen(259,223);
-		clickOnScroll(UpdateCart_id);
 		waitForFewSeconds(1);
-		clickOnScroll(Checkout_id);
-		clickOnScreen(259,223);
-		clickOnScroll(MyCart_id);
-		waitForFewSeconds(1);
-		clickOnScreen(259,223);
-		clickOnScroll(Remove_id);
-		waitForFewSeconds(1);
-		clickOnScroll(Back_id);
+		clickOnStatictext("Computers");
+		clickOnScroll("5");
+		waitForFewSeconds(4);
+		clickOnimages("7");
+		waitForFewSeconds(4);
+		target.frontMostApp().keyboard().typeString("9");
+		waitForFewSeconds(4);
+		target.frontMostApp().windows()[1].toolbar().buttons()["Done"].tap();
+		waitForFewSeconds(4);
+		clickOnStatictext("Remove");
+		waitForFewSeconds(4);
+		clickOnScroll("Browse");
+		waitForFewSeconds(2);
 		UIALogger.logPass(testname);
 		
 		}
 	  	
 	catch(error){		
 			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(testname);	
+			UIALogger.logFail(testname);
+		
+	}
+}
+function testTablets(testname){
+	try{
+		
+		//clickOnScroll(Browse_id);
+		waitForFewSeconds(1);
+		clickOnStatictext("Tablets");
+		clickOnScroll("5");
+		waitForFewSeconds(3);
+		clickOnimages("7");
+		waitForFewSeconds(2);
+		target.frontMostApp().keyboard().typeString("0");
+		waitForFewSeconds(2);
+		target.frontMostApp().windows()[1].toolbar().buttons()["Done"].tap();
+		waitForFewSeconds(2);
+		clickOnStatictext("Remove");
+		waitForFewSeconds(2);
+		clickOnScroll("Browse");
+		waitForFewSeconds(2);
+		UIALogger.logPass(testname);
+		
+		}
+	  	
+	catch(error){		
+			captureScreenshot(testname);			
+			UIALogger.logFail(testname);
+		
+	}
+}
+function testAudioDevices(testname){
+	try{
+		
+		//clickOnScroll(Browse_id);
+		waitForFewSeconds(1);
+		clickOnStatictext("Audio Devices");
+		clickOnScroll("5");
+		waitForFewSeconds(3);
+		clickOnimages("7");
+		waitForFewSeconds(2);
+		target.frontMostApp().keyboard().typeString("5");
+		waitForFewSeconds(2);
+		target.frontMostApp().windows()[1].toolbar().buttons()["Done"].tap();
+		waitForFewSeconds(3);
+		clickOnStatictext("Remove");
+		waitForFewSeconds(3);
+		clickOnScroll("Browse");
+		UIALogger.logPass(testname);
+		
+		}
+	  	
+	catch(error){		
+			captureScreenshot(testname);			
+			UIALogger.logFail(testname);
+		
 	}
 }
 testComputer("ComputerTest");
+testTablets("TabletsTest");
+testAudioDevices("AudioDevicesTest")
