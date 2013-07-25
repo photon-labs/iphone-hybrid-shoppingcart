@@ -6,30 +6,28 @@ function testAudioDevice(testname){
 	try{
 		
 		//clickOnScroll(Browse_id);
-		clickOnScroll(AudioDevice_id);
-		clickOnScreen(110,127);
-		waitForFewSeconds(3);
-		clickOnScreen(184,231);
-		waitForFewSeconds(3);
-		clickOnScreen(259,223);
-		clickOnScroll(UpdateCart_id);
-		waitForFewSeconds(1);		
-		clickOnScroll(Checkout_id);
-		clickOnScreen(259,223);
-		waitForFewSeconds(1);
-		clickOnScroll(MyCart_id);
-		clickOnScreen(259,223);
-		waitForFewSeconds(1);
-		clickOnScroll(Remove_id);
-		waitForFewSeconds(2);
-		clickOnScroll(Back_id);
+		clickOnStatictext("Audio Devices");
+		waitForFewSeconds(1)
+		clickOnScroll("Pearstone B&H Kit Vocal Microphone Accessory Bundle - Deluxe");	
+		waitForFewSeconds(2)
+		clickOnimages("7");
+		waitForFewSeconds(2)
+		target.frontMostApp().keyboard().typeString("3");
+		waitForFewSeconds(2)
+		target.frontMostApp().windows()[1].toolbar().buttons()["Done"].tap();
+		waitForFewSeconds(2)
+		clickOnStatictext("Remove");
+		waitForFewSeconds(2)
+		clickOnScroll("Browse");		
+		waitForFewSeconds(5)
 		UIALogger.logPass(testname);
+		
+		
 		
 	}
 	catch(error){		
 			captureScreenshot(testname);			
-			UIALogger.logFail("Fail");
-			UIALogger.logError(testname);	
+			UIALogger.logFail(testname);	
 	}
 }
 testAudioDevice("AudioDeviceTest");

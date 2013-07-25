@@ -112,10 +112,10 @@ function isScrollViewExist(button){
 function isTextPresent(text){
 	if (text!=null){
 		for(var i=0;i<=j;i++){
-			var imagepresent = mainwindow.images()[0];
-			var textpresent = imagepresent.staticTexts()[text];
+			var textpresent = mainwindow.scrollViews()[0].webViews()[0].staticTexts()[text];;
 			if(textpresent.isVisible() && textpresent.isEnabled()){
 				return textpresent;
+				UIALogger.logMessage("---text exists---");			
 				//break;
 			}
 			else{
@@ -246,6 +246,40 @@ function isStaticTextExist(text){
 	}
 }
 
+
+function clickOnStatictext(text){
+	
+	mainwindow.scrollViews()[0].webViews()[0].staticTexts()[text].tap();
+}
+function clickOnimages(value){
+	mainwindow.scrollViews()[0].webViews()[0].images()[value].tap();
+	}
+
+function clickOnScrollViewtextField(textFieldValue){	
+
+	if(cellValue!=null){
+		for(var i=0;i<=j;i++){			
+			var scrollViewTextpresent=mainwindow.scrollViews()[0].webViews()[0].textFields()[textFieldValue];	
+			if(scrollViewTextpresent.isVisible() && scrollViewTextpresent.isEnabled()){				
+				scrollViewTextpresent.tap();	
+				break;				
+			}
+			else{
+				if(i==j){
+					UIALogger.logMessage("---Expected TableViewField not exists---");
+					throw error;
+				}
+				else{
+					UIALogger.logMessage("---wait for TableViewField present---");
+					waitForFewSeconds(1);
+				}
+			}
+		}
+	}
+	else{
+		UIALogger.logMessage("---TableViewField not exists---");
+	}	
+}
 
 
 

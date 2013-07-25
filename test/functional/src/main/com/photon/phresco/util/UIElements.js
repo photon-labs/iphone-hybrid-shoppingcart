@@ -1,6 +1,6 @@
 
 var Browse_id="\nBrowse\n";
-var Television_id="Television (10)";
+var Television_id="Television";
 var UpdateCart_id="Update Cart";
 var Checkout_id="Check Out";
 var CustomerInformaion_id="Customer Information";
@@ -18,3 +18,5 @@ var Back_id="Back\n";
 var MyCart_id="My Cart";
 var Remove_id="Remove";
 var Invali_ID="Back";
+
+var logResult = "LoginResult"; 
