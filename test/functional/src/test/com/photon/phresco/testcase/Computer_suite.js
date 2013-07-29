@@ -10,7 +10,7 @@ function testComputer(testname){
 		clickOnStatictext("Computers");
 		clickOnScroll("5");
 		waitForFewSeconds(4);
-		clickOnimages("7");
+		clickOnScreen(184, 235);
 		waitForFewSeconds(4);
 		target.frontMostApp().keyboard().typeString("9");
 		waitForFewSeconds(4);
@@ -38,7 +38,7 @@ function testTablets(testname){
 		clickOnStatictext("Tablets");
 		clickOnScroll("5");
 		waitForFewSeconds(3);
-		clickOnimages("7");
+		clickOnScreen(184, 235);
 		waitForFewSeconds(2);
 		target.frontMostApp().keyboard().typeString("0");
 		waitForFewSeconds(2);
@@ -66,7 +66,7 @@ function testAudioDevices(testname){
 		clickOnStatictext("Audio Devices");
 		clickOnScroll("5");
 		waitForFewSeconds(3);
-		clickOnimages("7");
+		clickOnScreen(184, 235);
 		waitForFewSeconds(2);
 		target.frontMostApp().keyboard().typeString("5");
 		waitForFewSeconds(2);

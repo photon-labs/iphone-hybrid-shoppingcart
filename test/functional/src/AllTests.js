@@ -4,5 +4,5 @@
 #import "test/com/photon/phresco/testcase/Computer_suite.js"
 #import "test/com/photon/phresco/testcase/MobilePhone_suite.js"
 #import "test/com/photon/phresco/testcase/AudioDevice_suite.js"
-#import "test/com/photon/phresco/testcase/Camera_suite.js"
-#import "test/com/photon/phresco/testcase/Tablet_suite.js"
+//#import "test/com/photon/phresco/testcase/Camera_suite.js"
+//#import "test/com/photon/phresco/testcase/Tablet_suite.js"
