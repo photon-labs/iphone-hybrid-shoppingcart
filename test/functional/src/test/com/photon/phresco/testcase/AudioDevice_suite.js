@@ -10,7 +10,7 @@ function testAudioDevice(testname){
 		waitForFewSeconds(1)
 		clickOnScroll("Pearstone B&H Kit Vocal Microphone Accessory Bundle - Deluxe");	
 		waitForFewSeconds(2)
-		clickOnimages("7");
+		clickOnScreen(184, 235);
 		waitForFewSeconds(2)
 		target.frontMostApp().keyboard().typeString("3");
 		waitForFewSeconds(2)

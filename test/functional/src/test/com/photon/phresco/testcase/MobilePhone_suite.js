@@ -11,7 +11,7 @@ function testMobilePhone(testname){
 		waitForFewSeconds(1)
 		clickOnScroll("Apple iPhone 4");
 		waitForFewSeconds(1)
-		clickOnimages("7");
+		clickOnScreen(184, 235);
 		waitForFewSeconds(1)
 		target.frontMostApp().keyboard().typeString("2");
 		waitForFewSeconds(1)

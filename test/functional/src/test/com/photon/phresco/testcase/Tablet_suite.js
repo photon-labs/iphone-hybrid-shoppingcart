@@ -5,7 +5,7 @@
 function testTablet(testname){
 	try{
 		
-		//clickOnScroll(Browse_id);
+		clickOnScroll(Browse_id);
 		waitForFewSeconds(1);
 		clickOnScroll(Tablet_id);
 		clickOnScreen(110,127);
