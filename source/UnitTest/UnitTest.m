@@ -26,7 +26,9 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in UnitTest");
+    NSString *first = @"Hello";
+    NSString *second = @"World";
+    STAssertFalse(first==second, @"False");
 }
 
 @end
