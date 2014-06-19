@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.photon.phresco.functional</groupId>
-    <artifactId>Eshop_FUNCTIONAL-iphonehybrid</artifactId>
+    <artifactId>iphone-hybrid-shoppingcart-func</artifactId>
     <packaging>jar</packaging>
     <name>Eshop_FUNCTIONAL-iphonehybrid</name>
     <version>1.0</version>
