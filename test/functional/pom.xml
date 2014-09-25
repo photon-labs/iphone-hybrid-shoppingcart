@@ -5,7 +5,7 @@
     <artifactId>iphone-hybrid-shoppingcart-func</artifactId>
     <packaging>jar</packaging>
     <name>Eshop_FUNCTIONAL-iphonehybrid</name>
-    <version>3.3.1.16002-SNAPSHOT</version>
+    <version>4.0.1001-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
